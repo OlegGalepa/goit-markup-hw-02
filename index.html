@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="normalize.css" />
+
     <title>homework-2</title>
   </head>
   <body>
@@ -35,9 +36,10 @@
     <main>
       <section class="your-bussines">
         <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+        <button type="button" class="servis">Замовити послугу</button>
       </section>
       <section class="section-warning">
+        <h2 hidden>Переваги</h2>
         <ul>
           <li>
             <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -96,7 +98,7 @@
       <section class="section-commands">
         <h2>Наша команда</h2>
         <ul>
-          <li>
+          <li class="designer">
             <img
               src="images/main_page/product_designer.jpg"
               alt="Product Designer"
@@ -107,7 +109,7 @@
             <p>Product Designer</p>
           </li>
 
-          <li>
+          <li class="developer">
             <img
               src="images/main_page/frontend_developer.jpg"
               alt="Frontend Developer"
@@ -117,7 +119,7 @@
             <h3>Ольга Рєпіна</h3>
             <p>Frontend Developer</p>
           </li>
-          <li>
+          <li class="marketing">
             <img
               src="images/main_page/marketing.jpg"
               alt="Marketing"
@@ -127,7 +129,7 @@
             <h3>Микола Тарасов</h3>
             <p>Marketing</p>
           </li>
-          <li>
+          <li class="ui-designer">
             <img
               src="images/main_page/ui_designer.jpg"
               alt="UI Designer"
