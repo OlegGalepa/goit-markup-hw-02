@@ -39,14 +39,18 @@
       <section class="carts">
         <h2 class="titles" hidden>Портфоліо</h2>
         <ul class="butcarts">
-          <li><button class="site-cart" type="button">Веб-сайт</button></li>
-          <li><button class="all-cart" type="button">Усі</button></li>
+          <li><button class="all-cart but" type="button">Усі</button></li>
           <li>
-            <button class="addition-cart" type="button">Додатки</button>
+            <button class="site-cart but" type="button">Веб-сайти</button>
           </li>
-          <li><button class="designer-cart" type="button">Дизайн</button></li>
           <li>
-            <button class="marketing-cart" type="button">Маркетинг</button>
+            <button class="addition-cart but" type="button">Додатки</button>
+          </li>
+          <li>
+            <button class="designer-cart but" type="button">Дизайн</button>
+          </li>
+          <li>
+            <button class="marketing-cart but" type="button">Маркетинг</button>
           </li>
         </ul>
         <ul class="parent">
@@ -57,8 +61,8 @@
               width="370"
               height="294"
             />
-            <h3>Технокряк</h3>
-            <p>Веб-сайт</p>
+            <h3 class="cards-name">Технокряк</h3>
+            <p class="parag-cards">Веб-сайт</p>
           </li>
           <li class="bascetball">
             <img
@@ -67,8 +71,8 @@
               width="370"
               height="294"
             />
-            <h3>Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
+            <h3 class="cards-name">Постер New Orlean vs Golden Star</h3>
+            <p class="parag-cards">Дизайн</p>
           </li>
           <li class="seafood">
             <img
@@ -77,8 +81,8 @@
               width="370"
               height="294"
             />
-            <h3>Ресторан Seafood</h3>
-            <p>Додаток</p>
+            <h3 class="cards-name">Ресторан Seafood</h3>
+            <p class="parag-cards">Додаток</p>
           </li>
           <li class="prime">
             <img
@@ -87,8 +91,8 @@
               width="370"
               height="294"
             />
-            <h3>Проєкт Prime</h3>
-            <p>Маркетинг</p>
+            <h3 class="cards-name">Проєкт Prime</h3>
+            <p class="parag-cards">Маркетинг</p>
           </li>
           <li class="boxes">
             <img
@@ -97,8 +101,8 @@
               width="370"
               height="294"
             />
-            <h3>Проєкт Boxes</h3>
-            <p>Додаток</p>
+            <h3 class="cards-name">Проєкт Boxes</h3>
+            <p class="parag-cards">Додаток</p>
           </li>
           <li class="borders">
             <img
@@ -107,8 +111,8 @@
               width="370"
               height="294"
             />
-            <h3>Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
+            <h3 class="cards-name">Inspiration has no Borders</h3>
+            <p class="parag-cards">Веб-сайт</p>
           </li>
           <li class="poster">
             <img
@@ -117,8 +121,8 @@
               width="370"
               height="294"
             />
-            <h3>Видання Limited Edition</h3>
-            <p>Дизайн</p>
+            <h3 class="cards-name">Видання Limited Edition</h3>
+            <p class="parag-cards">Дизайн</p>
           </li>
           <li class="lav">
             <img
@@ -127,8 +131,8 @@
               width="370"
               height="294"
             />
-            <h3>Проєкт LAB</h3>
-            <p>Маркетинг</p>
+            <h3 class="cards-name">Проєкт LAB</h3>
+            <p class="parag-cards">Маркетинг</p>
           </li>
           <li class="busines">
             <img
@@ -137,23 +141,31 @@
               width="370"
               height="294"
             />
-            <h3>Growing Business</h3>
-            <p>Додаток</p>
+            <h3 class="cards-name">Growing Business</h3>
+            <p class="parag-cards">Додаток</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <a class="logo" href="index.html"> <span class="web">Web</span>Studio </a>
-      <address id="1">
-        <ul>
+    <footer class="footerport">
+      <a class="logof" href="index.html">
+        <span class="web">Web</span>Studio
+      </a>
+      <address id="1" class="address">
+        <ul class="inform">
           <li>
-            <a href="https://goo.gl/maps/NmpcZfHMNgNycroPA"
+            <a class="navigation" href="https://goo.gl/maps/NmpcZfHMNgNycroPA"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="number">
+            <a class="mailto" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
