@@ -1,29 +1,30 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap'); */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+/* Загальні стилі для сторінки */
 body {
-    font-family: 'Roboto' , 'Times New Roman';
-    color:#000
+    font-family: 'Roboto' , sans-serif ;
+    --bg-main-color: #F5F5F5;
+    --bg-screan-footer-color:#2F303A;
+    --bg-header-color: #fff;
+    --focus-color:#2196F3;
+    --o-nas-color: #757575;
+    --title-text-color:#212121;
+    --comands-color:#F5F4FA;
+    --text-footer-color:#fff;
 }
-/* :root { 
-    --animation-name:green
-} */
-header {
+/* верх сторінкм */
+.header {
     position: absolute;
     width: 1600px;
     height: 80px;
     left: 0px;
     top: 0px;
-    background: #FFFFFF;
+    background-color: var(--bg-header-color);
 }
+/* логотип */
 .logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.19;
     font-size: 26px;
     letter-spacing: 0.03em;
     position: absolute;
@@ -34,8 +35,9 @@ header {
     color: #000;    
 }
 .web {
-    color: #2196F3
+    color: var(--focus-color)
 }
+
 .studia {
         width: 45px;
         left: 453px;
@@ -53,17 +55,16 @@ header {
 .navig>li>a {
     top: 32px;
     position: absolute;
-    font-family: 'Roboto';
     font-style: normal;
     height: 16px;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
 .navig>li>a:hover ,.navig>li>a:focus {
-    color: #2196F3;
+    color: var(--focus-color)
 } 
 a, ul {
     list-style-type: none;
@@ -73,16 +74,16 @@ a, ul {
     position:absolute;
     height: 16px;
     top: 32px;
-        font-family: 'Roboto';
+        /* font-family: 'Roboto'; */
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #757575;
+        color: var(--o-nas-color);
 }
 .communication>li>a:hover, .communication>li>a:focus {
-    color: #2196F3;
+    color: var(--focus-color);
 }
 [href^="mail"] {
     width: 135px;
@@ -98,7 +99,7 @@ a, ul {
     height: 600px;
     left: 0px;
     top: 80px;
-    background: #2F303A;
+    background: var(--bg-screan-footer-color);
 }
 .your-bussines h1 {
     color: #fff;
@@ -111,17 +112,17 @@ a, ul {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 .servis {
-        font-family: 'Roboto';
+        /* font-family: 'Roboto'; */
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.87;
         letter-spacing: 0.06em;
         background: #2196F3;
         border: 0;
@@ -132,7 +133,7 @@ a, ul {
         height: 50px;
         left: 692px;
         top: 430px;
-        color: #fff;
+        color: var(--bg-header-color);
         cursor: pointer;
 } 
 .section-warning {
@@ -156,11 +157,10 @@ a, ul {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;  
-    color: #212121; 
-    font-family: 'Roboto';
+    color: var(--title-text-color);
 }
 
 .section-commands {
@@ -168,7 +168,7 @@ a, ul {
     height: 648px;
     left: 0px;
     top: 1446px;
-    background: #F5F4FA; 
+    background-color: var(--comands-color);
     width: 1600px;
 }
 .section-commands h2 {
@@ -177,16 +177,16 @@ a, ul {
     left: 668px;
     top: 1540px;
     
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     
     width: 264px;
-    color: #212121
+    color: var(--title-text-color);
 }
 
 .designer {
@@ -195,7 +195,7 @@ a, ul {
     left: 215px;
     /* top: 186px; */
     width: 270px;
-    background: #FFFFFF;
+    background-color: var(--bg-header-color);
         /* material shadow v1 */
     
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -209,7 +209,7 @@ position: absolute;
     left: 515px;
     /* top: 1632px; */
 
-    background: #FFFFFF;
+    background-color: var(--bg-header-color);
     /* material shadow v1 */
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -222,7 +222,7 @@ position: absolute;
         left: 815px;
         /* top: 1632px; */
     
-        background: #FFFFFF;
+        background-color: var(--bg-header-color);
         /* material shadow v1 */
     
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -235,7 +235,7 @@ position: absolute;
         left: 1115px;
         /* top: 1632px; */
     
-        background: #FFFFFF;
+        background-color: var(--bg-header-color);
         /* material shadow v1 */
     
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -251,11 +251,55 @@ position: absolute;
 
 .footer {
     position: absolute;
-        width: 1600px;
-        height: 252px;
-        left: 0px;
-        top: 2094px;
+    height: 252px;
+    width: 1600px;
+    left: 0px;
+    top: 2094px;
     
-        background: #2F303A;
-         color: #fff;  
+    background: var(--bg-screan-footer-color);
+    color: var(--text-footer-color)
 }  
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.div7 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div8 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div9 {
+    grid-area: 3 / 3 / 4 / 4;
+}
