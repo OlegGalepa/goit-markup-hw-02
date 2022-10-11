@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
         <a class="logo" href="index.html">
           <span class="web">Web</span>Studio
@@ -27,22 +27,30 @@
         </ul>
       </nav>
       <ul class="communication">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a class="phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <section class="carts">
-        <h2>блок карт</h2>
-        <ul>
-          <li><button type="button">Усі</button></li>
-          <li><button type="button">Веб-сайт</button></li>
-          <li><button type="button">Додатки</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+        <h2 class="titles" hidden>Портфоліо</h2>
+        <ul class="butcarts">
+          <li><button class="site-cart" type="button">Веб-сайт</button></li>
+          <li><button class="all-cart" type="button">Усі</button></li>
+          <li>
+            <button class="addition-cart" type="button">Додатки</button>
+          </li>
+          <li><button class="designer-cart" type="button">Дизайн</button></li>
+          <li>
+            <button class="marketing-cart" type="button">Маркетинг</button>
+          </li>
         </ul>
-        <ul parent>
-          <li class="div1">
+        <ul class="parent">
+          <li class="laptop">
             <img
               src="images/portfolio/laptop.jpg"
               alt="ноутбук"
@@ -52,7 +60,7 @@
             <h3>Технокряк</h3>
             <p>Веб-сайт</p>
           </li>
-          <li class="div2">
+          <li class="bascetball">
             <img
               src="images/portfolio/bascetball.jpg"
               alt="баскетбол"
@@ -62,7 +70,7 @@
             <h3>Постер New Orlean vs Golden Star</h3>
             <p>Дизайн</p>
           </li>
-          <li class="div3">
+          <li class="seafood">
             <img
               src="images/portfolio/seafood.jpg"
               alt="риба"
@@ -72,7 +80,7 @@
             <h3>Ресторан Seafood</h3>
             <p>Додаток</p>
           </li>
-          <li class="div4">
+          <li class="prime">
             <img
               src="images/portfolio/prime.jpg"
               alt="навушники"
@@ -82,7 +90,7 @@
             <h3>Проєкт Prime</h3>
             <p>Маркетинг</p>
           </li>
-          <li class="div5">
+          <li class="boxes">
             <img
               src="images/portfolio/boxes.jpg"
               alt="коробки"
@@ -92,7 +100,7 @@
             <h3>Проєкт Boxes</h3>
             <p>Додаток</p>
           </li>
-          <li class="div6">
+          <li class="borders">
             <img
               src="images/portfolio/borders.jpg"
               alt="екран"
@@ -102,7 +110,7 @@
             <h3>Inspiration has no Borders</h3>
             <p>Веб-сайт</p>
           </li>
-          <li class="div7">
+          <li class="poster">
             <img
               src="images/portfolio/poster.jpg"
               alt="постер"
@@ -112,7 +120,7 @@
             <h3>Видання Limited Edition</h3>
             <p>Дизайн</p>
           </li>
-          <li class="div8">
+          <li class="lav">
             <img
               src="images/portfolio/lav.jpg"
               alt="лав"
@@ -122,7 +130,7 @@
             <h3>Проєкт LAB</h3>
             <p>Маркетинг</p>
           </li>
-          <li class="div9">
+          <li class="busines">
             <img
               src="images/portfolio/busines.jpg"
               alt=""
@@ -135,7 +143,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <a class="logo" href="index.html"> <span class="web">Web</span>Studio </a>
       <address id="1">
         <ul>

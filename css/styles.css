@@ -8,7 +8,11 @@ body {
     --o-nas-color: #757575;
     --title-text-color:#212121;
     --comands-color:#F5F4FA;
-    --text-footer-color:#fff;
+    --text-footer-color:#fff;    
+}
+a, ul {
+    list-style-type: none;
+    text-decoration: none;
 }
 /* верх сторінкм */
 .header {
@@ -37,16 +41,14 @@ body {
 .web {
     color: var(--focus-color)
 }
-
+/* кнопки навігації */
 .studia {
         width: 45px;
         left: 453px;
-        /* color: #2196F3 */
 }
 .portfolio {
         width: 72px;
         left: 548px;    
-        /* color: #212121; */
 }
 .contacts {
         width: 64px;
@@ -61,15 +63,12 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 .navig>li>a:hover ,.navig>li>a:focus {
     color: var(--focus-color)
 } 
-a, ul {
-    list-style-type: none;
-    text-decoration: none;
-}
+/* телефон та мейл */
 .communication>li>a {
     position:absolute;
     height: 16px;
@@ -85,29 +84,32 @@ a, ul {
 .communication>li>a:hover, .communication>li>a:focus {
     color: var(--focus-color);
 }
-[href^="mail"] {
+.mail {
     width: 135px;
     left: 1078px;
 }
-[href^="tel"] {
+.phone {
     width: 122px;
     left: 1263px;
 }
+/* Секція 1 інтерактивна  */
  .your-bussines {
-    position: absolute;
+    position: absolute; 
     width: 1600px;
     height: 600px;
     left: 0px;
     top: 80px;
     background: var(--bg-screan-footer-color);
 }
+
 .your-bussines h1 {
     color: #fff;
     position: absolute;
+    
     width: 696px;
     height: 120px;
-    left: 452px;
-    top: 280px;
+    left: 452px; 
+    top: 280px; 
     /* font-family: 'Roboto'; */
     font-style: normal;
     font-weight: 900;
@@ -136,15 +138,48 @@ a, ul {
         color: var(--bg-header-color);
         cursor: pointer;
 } 
-.section-warning {
+
+
+.titles {
+    height: 42px;  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.section-features {
     position: absolute;
-        width: 1170px;
-        height: 98px;
-        left: 215px;
-        top: 774px;
+    width: 1170px;
+    height: 98px;
+    left: 215px;
+    top: 774px;
+} 
+
+.atention-detail {
+    height: 98px;
+    left: 215px;
 }
 
+.punctuality {
+    height: 74px;
+    left: 515px;
+}
 
+.planning {
+    height: 74px;
+    left: 815px;
+}
+
+.technology {
+    position: absolute;
+    width: 270px;
+    height: 98px;
+    left: 1115px;
+    top: 774px;
+}
 
 .section-work {
     position: absolute;
@@ -152,15 +187,6 @@ a, ul {
     left: 215px;
     top: 966px;
     width: 1170px;
-}
-.section-work h2 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;  
-    color: var(--title-text-color);
 }
 
 .section-commands {
@@ -170,23 +196,6 @@ a, ul {
     top: 1446px;
     background-color: var(--comands-color);
     width: 1600px;
-}
-.section-commands h2 {
-    position: absolute;
-    height: 42px;
-    left: 668px;
-    top: 1540px;
-    
-    /* font-family: 'Roboto'; */
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    
-    width: 264px;
-    color: var(--title-text-color);
 }
 
 .designer {
@@ -267,39 +276,65 @@ position: absolute;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+/* Кнопки в портфоліо */
+.butcarts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 
-.div1 {
+.site-cart {
     grid-area: 1 / 1 / 2 / 2;
 }
 
-.div2 {
+.all-cart {
     grid-area: 1 / 2 / 2 / 3;
 }
 
-.div3 {
+.addition-cart {
     grid-area: 1 / 3 / 2 / 4;
 }
 
-.div4 {
+.designer-cart {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.marketing-cart {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+/* картки в портфоліо */
+
+.laptop {grid-area: 1 / 1 / 2 / 2;}
+
+.bascetball {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.seafood {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.prime {
     grid-area: 2 / 1 / 3 / 2;
 }
 
-.div5 {
+.boxes {
     grid-area: 2 / 2 / 3 / 3;
 }
 
-.div6 {
+.borders {
     grid-area: 2 / 3 / 3 / 4;
 }
 
-.div7 {
-    grid-area: 3 / 1 / 4 / 2;
-}
+.poster {grid-area: 3 / 1 / 4 / 2;}
 
-.div8 {
+.lav {
     grid-area: 3 / 2 / 4 / 3;
 }
 
-.div9 {
+.busines {
     grid-area: 3 / 3 / 4 / 4;
 }
