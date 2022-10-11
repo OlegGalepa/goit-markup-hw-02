@@ -269,13 +269,7 @@ position: absolute;
     color: var(--text-footer-color)
 }  
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
+
 /* Кнопки в портфоліо */
 .butcarts {
     display: grid;
@@ -306,6 +300,13 @@ position: absolute;
 }
 
 /* картки в портфоліо */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 
 .laptop {grid-area: 1 / 1 / 2 / 2;}
 
