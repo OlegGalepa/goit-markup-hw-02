@@ -35,9 +35,6 @@ a, ul {
 .web {
     color: var(--focus-color);
 }
-.studia {
-    accent-color: var(--accent-color);
-}
 .portfolio {
     accent-color: var(--accent-color);
 }
@@ -46,6 +43,9 @@ a, ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+}
+.curent {
+    color: var(--accent-color)
 }
 /* телефон та мейл */
 .info-act {
