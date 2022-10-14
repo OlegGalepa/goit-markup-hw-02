@@ -17,7 +17,7 @@ body {
     font-size: 14px;
 }
 .accent:hover, .accent:focus {
-    color: var(--accent-color);
+    color: var(--focus-color);
 }
 a, ul {
     list-style-type: none;
@@ -33,7 +33,7 @@ a, ul {
     color: var(--logo-studia-color);   
 }
 .web {
-    color: var(--accent-color);
+    color: var(--focus-color);
 }
 .navig {
     font-weight: 500;
@@ -41,6 +41,10 @@ a, ul {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
+.studia.current {
+    accent-color: #2196F3;
+}
+
 /* телефон та мейл */
 .info-act {
     line-height: 1.14;
@@ -74,7 +78,6 @@ a, ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--bg-header-color);
-    cursor: pointer;
 } 
 /* всі заголовки */
 .titles {
@@ -171,7 +174,6 @@ a, ul {
     background-color: var(--comands-color);
     border-radius: 4px;
     border: none;
-    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
