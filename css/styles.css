@@ -13,7 +13,7 @@
 /* Загальні стилі для сторінки */
 body {
     font-family: 'Roboto' , sans-serif ;
-    background-color: var(--bg-color);
+    background-color: var(--bg-header-color);
     font-size: 14px;
 }
 .header {
@@ -94,9 +94,7 @@ a, ul {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.section-features, .section-work {
-    background-color: var(--bg-color);
-}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
