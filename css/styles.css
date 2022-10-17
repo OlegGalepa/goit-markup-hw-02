@@ -170,10 +170,12 @@ a, ul {
      letter-spacing: 0.03em;
  }
  .mailto {
+     font-style: normal;
      color: rgba(255, 255, 255, 0.6);
  }
 
  .tel {
+     font-style: normal;
      color: rgba(255, 255, 255, 0.6);
  }
 
